@@ -1,0 +1,125 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local RoWareiOS = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local Execute = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(46, 48, 46)
+Main.BorderColor3 = Color3.fromRGB(0, 5, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.311651111, 0, 0.20514141, 0)
+Main.Size = UDim2.new(0, 388, 0, 228)
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 388, 0, 41)
+
+RoWareiOS.Name = "Ro-Ware iOS"
+RoWareiOS.Parent = Frame
+RoWareiOS.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RoWareiOS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RoWareiOS.BorderSizePixel = 0
+RoWareiOS.Position = UDim2.new(0.252577305, 0, 0, 0)
+RoWareiOS.Size = UDim2.new(0, 197, 0, 41)
+RoWareiOS.Font = Enum.Font.PatrickHand
+RoWareiOS.Text = "Ro-Ware iOS"
+RoWareiOS.TextColor3 = Color3.fromRGB(169, 38, 134)
+RoWareiOS.TextSize = 23.000
+
+UICorner.Parent = Frame
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(85, 85, 87)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0180412363, 0, 1.29268289, 0)
+TextBox.Size = UDim2.new(0, 375, 0, 129)
+TextBox.Font = Enum.Font.Garamond
+TextBox.Text = "print("hello world")"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_2.Parent = TextBox
+
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(155, 50, 130)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0180412363, 0, 4.65853643, 0)
+Execute.Size = UDim2.new(0, 152, 0, 30)
+Execute.Font = Enum.Font.Unknown
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextSize = 24.000
+
+UICorner_3.Parent = Execute
+
+Clear.Name = "Clear"
+Clear.Parent = Frame
+Clear.BackgroundColor3 = Color3.fromRGB(155, 50, 130)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.592783511, 0, 4.65853643, 0)
+Clear.Size = UDim2.new(0, 152, 0, 30)
+Clear.Font = Enum.Font.Unknown
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+Clear.TextSize = 24.000
+
+UICorner_4.Parent = Clear
+
+UIListLayout.Parent = Main
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+UICorner_5.CornerRadius = UDim.new(0, 9)
+UICorner_5.Parent = Main
+
+-- Scripts:
+
+local function QZWVFR_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	script.Parent.MouseButton1Click:Connect(function()	
+		loadstring(script.Parent.Parent.Source.Text)()
+	end)
+end
+coroutine.wrap(QZWVFR_fake_script)()
+local function GMHI_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Source.Text = ''
+	end)
+end
+coroutine.wrap(GMHI_fake_script)()
+local function UKDLP_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(UKDLP_fake_script)()
