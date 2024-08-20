@@ -1,11 +1,1 @@
-Dox My Cousin
-Name: Zak
-House location: Clemens Terrace, Farmwell Hunt, Ashburn Virginia
-Wi-Fi name: Fios-LD5m7
-Wi-Fi password: fay33sushi53fad
-IPv4: 192.168.1.162
-Computer Passcode: 2001
-Subnet Mask: 255.255.255.0
-Router: 192.168.1.1
-Wi-Fi Address: 
-BE:0A:27:BE:14:B1
+nothing to see here
